@@ -25,7 +25,7 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="date">Last updated October 14, 2026</p>
+<p class="date">Last updated October 27, 2026</p>
 
 <p>This policy explains what information the Stackd app collects, why, who it's shared with, and the choices you have. Stackd is operated by Zachary Bender, based in Canada ("we", "us"). If you have questions, contact us at <a href="mailto:stackd.contact@gmail.com">stackd.contact@gmail.com</a>.</p>
 
@@ -34,26 +34,30 @@
 <h2>1. Information we collect</h2>
 <table>
   <tr><th>What</th><th>Details</th></tr>
-  <tr><td>Account details</td><td>Your email address and a securely hashed password, if you create an account.</td></tr>
+  <tr><td>Account details</td><td>Your email address, plus a securely hashed password if you sign up with email. If you sign in with Apple or Google, we receive your email address (or Apple's private relay address, if you choose to hide it), your name if you choose to share it, and an account identifier from that service. We use your name only to greet you in the app.</td></tr>
+  <tr><td>Subscription details</td><td>Whether you have an active Stackd Premium subscription or free trial, which plan it is, and its start, renewal and expiry dates. Purchases are handled by Apple, so we never see your payment card details.</td></tr>
   <tr><td>Poker data you enter</td><td>Sessions (tables, blinds, dates, times, buy-ins, cash-outs, expenses), recorded hands, notes on other players, and practice results.</td></tr>
   <tr><td>Hands sent for analysis</td><td>Cards, positions, stack sizes, actions and any notes on a hand you ask Stackd to analyze, plus the analysis we return.</td></tr>
   <tr><td>Feedback</td><td>Your message and any screenshot you choose to attach.</td></tr>
   <tr><td>Technical data</td><td>When the app talks to our servers, they record basic request details such as IP address, time and app version, for security and fixing errors.</td></tr>
 </table>
-<p>We do <strong>not</strong> collect your name, location, contacts, payment card details or advertising identifiers.</p>
+<p>We do <strong>not</strong> collect your location, contacts, browsing history, payment card details or advertising identifiers.</p>
 <p><strong>Notes on other players:</strong> notes you write about people you play with are stored for your use only. They're never shown to anyone else. Please keep them about play style, not personal details.</p>
 
 <h2>2. How we collect it</h2>
 <ul>
   <li><strong>From you</strong>, when you sign up, enter sessions and hands, request an analysis or send feedback.</li>
+  <li><strong>From Apple or Google</strong>, if you choose to sign in with them (see "Account details" above).</li>
+  <li><strong>From Apple, through RevenueCat</strong>, when you start a subscription or free trial, so the app knows which plan you have.</li>
   <li><strong>Automatically</strong>, as basic server logs when the app connects to our servers.</li>
 </ul>
-<p>We don't buy data or receive information about you from other companies.</p>
+<p>We don't buy data, and apart from the sign-in and subscription details above, we don't receive information about you from other companies.</p>
 
 <h2>3. How we use it</h2>
 <ul>
   <li><strong>To run the app:</strong> signing you in, saving your data, and syncing it between your devices.</li>
   <li><strong>To analyze hands you submit</strong> and show you the results later.</li>
+  <li><strong>To manage your subscription:</strong> unlocking Premium, applying free trials and keeping track of your monthly analysis allowance.</li>
   <li><strong>To support you:</strong> replying to feedback and fixing the bugs you report.</li>
   <li><strong>To keep Stackd secure:</strong> preventing abuse, such as excessive analysis requests.</li>
 </ul>
@@ -74,7 +78,9 @@
   <tr><td>Supabase</td><td>Sign-in and database storage</td><td>Account details, your synced data, feedback</td></tr>
   <tr><td>Render</td><td>Hosts our analysis server</td><td>Hands sent for analysis, server logs</td></tr>
   <tr><td>Anthropic</td><td>The AI model (Claude) that writes hand analyses</td><td>Only the hand details you submit, not your email or account details</td></tr>
-  <tr><td>Apple</td><td>App distribution and any in-app purchases</td><td>Purchase details, handled by Apple under its own privacy policy</td></tr>
+  <tr><td>RevenueCat</td><td>Manages subscriptions and free trials</td><td>A random account ID and your purchase history from Apple. No email, name or poker data</td></tr>
+  <tr><td>Apple</td><td>App distribution, in-app purchases and Sign in with Apple</td><td>Purchase details and sign-in, handled by Apple under its own privacy policy</td></tr>
+  <tr><td>Google</td><td>Sign in with Google (if you use it), and a spreadsheet we use to track our analysis costs</td><td>Sign-in, handled by Google under its own privacy policy. The cost spreadsheet holds only a random account ID, the date, the analysis grade and its cost, never your email, name or hands</td></tr>
 </table>
 <p>Under its commercial terms, Anthropic doesn't use data sent through its API to train its models. We may also disclose information if the law requires it, or to protect the safety of our users or service.</p>
 
@@ -87,6 +93,7 @@
   <li><strong>Data on your device:</strong> until you delete it in Settings or remove the app.</li>
   <li><strong>Server logs:</strong> up to 30 days.</li>
   <li><strong>Feedback:</strong> up to 12 months, unless it's still needed to fix an issue.</li>
+  <li><strong>Subscription records:</strong> kept by Apple and RevenueCat as needed for billing, tax and accounting rules. Cancel your subscription in your Apple ID settings, since deleting your account doesn't cancel it.</li>
 </ul>
 
 <h2>8. Your rights and choices</h2>
@@ -94,7 +101,7 @@
 <ul>
   <li><strong>Access</strong> a copy of your data.</li>
   <li><strong>Correct</strong> inaccurate data. Most of it you can edit directly in the app.</li>
-  <li><strong>Delete</strong> your data or your whole account. You can do this in the app's Settings, or by contacting us.</li>
+  <li><strong>Delete</strong> your data or your whole account. You can do this in the app's Settings, or by contacting us. If you signed in with Apple, deleting your account also disconnects Stackd from your Apple ID.</li>
   <li><strong>Export</strong> your data in a portable format.</li>
   <li><strong>Object to or restrict</strong> certain processing.</li>
   <li><strong>Complain</strong> to a data protection authority. In Canada, that's the <a href="https://www.priv.gc.ca">Office of the Privacy Commissioner of Canada</a>.</li>
